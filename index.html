@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de temperaturas</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+        <div class="icono">🌡️</div>
+
+        <h1>Temperature Lab</h1>
+        <p class="descripcion">Convierte tus temperaturas fácilmente</p>
+
+        <form id="formulario">
+
+            <label for="valor">Temperatura</label>
+            <input type="number" id="valor" step="any" placeholder="Ejemplo: 25">
+
+            <div class="campos">
+                <div class="campo">
+                    <label for="origen">Convertir desde</label>
+                    <select id="origen">
+                        <option value="">Seleccionar</option>
+                        <option value="C">Celsius</option>
+                        <option value="F">Fahrenheit</option>
+                        <option value="K">Kelvin</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="destino">Convertir a</label>
+                    <select id="destino">
+                        <option value="">Seleccionar</option>
+                        <option value="C">Celsius</option>
+                        <option value="F">Fahrenheit</option>
+                        <option value="K">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" id="convertir" disabled>
+                Convertir temperatura
+            </button>
+
+        </form>
+
+        <div id="resultado" aria-live="polite"></div>
+
+        <p class="pie">La temperatura correcta, en la unidad que necesitas.</p>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
